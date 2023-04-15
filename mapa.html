@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Mapa de Centros CCT</title>
+    <link rel="stylesheet" href="styleMap.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD57xCnc9Sjrc95JAL1CngNht-6H_EG5XU&callback=initMap"
+    async defer></script>
+</head>
+<body>
+    <div class="contenedor">
+
+        <form id="formulario-filtros">
+
+            <br><h1>Mapa de centros CCT</h1>
+            <label for="sostenimiento">Sostenimiento:</label>
+        <select name="sostenimiento" id="sostenimiento">
+          <option value="">Todos</option>
+          <option value="PRIVADO">PRIVADO</option>
+          <option value="FEDERAL TRANSFERIDO">FEDERAL TRANSFERIDO</option>
+          <option value="FEDERAL">FEDERAL</option>
+          <option value="AUTÓNOMO">AUTÓNOMO</option>
+          <option value="ESTATAL">ESTATAL</option>
+          <option value="SUBSIDIO">SUBSIDIO</option>
+          <option value="FEDERAL TRANSFERIDO-ESTATAL">FEDERAL TRANSFERIDO-ESTATAL</option>
+        </select>
+        <label for="nivel">Nivel:</label>
+        <select name="nivel" id="nivel">
+            <option value="">Todos</option>
+            <option value="BÁSICA">BÁSICA</option>
+            <option value="CAPACITACION">CAPACITACION</option>
+            <option value="MEDIA SUPERIOR">MEDIA SUPERIOR</option>
+            <option value="SUPERIOR">SUPERIOR</option>
+            <option value="INICIAL">INICIAL</option>
+            <option value="ESPECIAL">ESPECIAL</option>
+            <option value="OTROS">OTROS</option>
+        </select>
+
+        
+        <label for="tipo-nivel">Tipo de Nivel General:</label>
+        <select name="nivel2" id="nivel2">
+            <option value="">Todos</option>
+            <option value="MEDIA SUPERIOR">MEDIA SUPERIOR</option>
+            <option value="PRIMARIA">PRIMARIA</option>
+            <option value="PREESCOLAR">PREESCOLAR</option>
+            <option value="SECUNDARIA">SECUNDARIA</option>
+            <option value="SUPERIOR">SUPERIOR</option>
+            <option value="FORMACIÓN PARA EL TRABAJO">FORMACIÓN PARA EL TRABAJO</option>
+            <option value="INICIAL">INICIAL</option>
+            <option value="CAM">CAM</option>
+            <option value="OTRO NIVEL EDUCATIVO">OTRO NIVEL EDUCATIVO</option>
+        </select>
+        <label for="tipo-nivel">Tipo de Nivel General Especifico:</label>
+        <select name="nivel3" id="nivel3">
+            <option value="">Todos</option>
+            <option value="BACHILLERATO GENERAL">BACHILLERATO GENERAL</option>
+            <option value="GENERAL">GENERAL</option>
+            <option value="COMUNITARIO">COMUNITARIO</option>
+            <option value="INDÍGENA">INDÍGENA</option>
+            <option value="LICENCIATURA Y POSGRADO">LICENCIATURA Y POSGRADO</option>
+            <option value="FORMACIÓN PARA EL TRABAJO">FORMACIÓN PARA EL TRABAJO</option>
+            <option value="TECNOLÓGICO">TECNOLÓGICO</option>
+            <option value="LACTANTE Y MATERNAL">LACTANTE Y MATERNAL</option>
+            <option value="TELESECUNDARIA">TELESECUNDARIA</option>
+            <option value="CAM">CAM</option>
+            <option value="PROFESIONAL TÉCNICO">PROFESIONAL TÉCNICO</option>
+            <option value="TÉCNICA">TÉCNICA</option>
+            <option value="INICIAL INDÍGENA">INICIAL INDÍGENA</option>
+            <option value="INICIAL NO ESCOLARIZADA">INICIAL NO ESCOLARIZADA</option>
+            <option value="ARTÍSTICA">ARTÍSTICA</option>
+            <option value="PROFESIONAL TÉCNICO BACHILLER">PROFESIONAL TÉCNICO BACHILLER</option>
+            <option value="DIPLOMADO">DIPLOMADO</option>
+            <option value="DEPORTES">DEPORTES</option>
+            <option value="IDIOMAS">IDIOMAS</option>
+          </select>
+
+          <br><button type="submit">Mostrar</button>
+        
+    </form>
+    <div id="map"></div>
+</div>
+
+    <script src="funMapa.js"></script>
+</body>
+</html>
